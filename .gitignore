@@ -1,0 +1,59 @@
+# ============ 环境变量 / 凭据（严禁提交）============
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.json
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ============ 虚拟环境 ============
+venv/
+.venv/
+env/
+ENV/
+
+# ============ Node 依赖（127MB，由 npm install 重建）============
+node_modules/
+.npm/
+npm-debug.log*
+yarn-error.log*
+
+# ============ 运行时数据（可重建 / 含业务与对话隐私）============
+# ChromaDB 向量库：43MB 二进制持久化数据，重新解析文档即可重建
+chroma_db/
+# 上传文档临时存储 + 问答历史记录 data/sessions/*.json
+data/
+
+# ============ 日志 ============
+*.log
+logs/
+
+# ============ 编辑器 / 操作系统 ============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============ 其他 ============
+*.bak
+*.tmp
+*.orig
+*.rej
